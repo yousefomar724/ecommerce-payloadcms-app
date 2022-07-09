@@ -1,4 +1,9 @@
-html, body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
   font-family: system-ui, Segoe UI, Helvetica Neue, Arial;
   margin: 0;
   padding: 0;
@@ -7,11 +12,11 @@ html, body {
 }
 
 :root {
-  --max-width-s : 640px;
-  --max-width-m : 1024px;
-  --max-width-l : 1440px;
+  --max-width-s: 640px;
+  --max-width-m: 1024px;
+  --max-width-l: 1440px;
 
-  --baseline : 30px;
+  --baseline: 30px;
 
   --color-dark-gray: #212121;
 }
@@ -21,32 +26,59 @@ img {
   width: auto;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.2;
 }
 
-h1 { font-size: 80px; }
+h1 {
+  font-size: 80px;
+}
 
-h2 { font-size: 60px; }
+h2 {
+  font-size: 60px;
+}
 
-h3 { font-size: 40px; }
+h3 {
+  font-size: 40px;
+}
 
-h4 { font-size: 30px; }
+h4 {
+  font-size: 30px;
+}
 
-h5 { font-size: 25px; }
+h5 {
+  font-size: 25px;
+}
 
-h6 { font-size: 20px; }
+h6 {
+  font-size: 20px;
+}
 
 @media (max-width: 1024px) {
-  h1 { font-size: 50px; }
+  h1 {
+    font-size: 50px;
+  }
 
-  h2 { font-size: 35px; }
+  h2 {
+    font-size: 35px;
+  }
 
-  h3 { font-size: 30px; }
+  h3 {
+    font-size: 30px;
+  }
 
-  h4 { font-size: 25px; }
+  h4 {
+    font-size: 25px;
+  }
 
-  h5 { font-size: 20px; }
+  h5 {
+    font-size: 20px;
+  }
 
-  h6 { font-size: 18px; }
+  h6 {
+    font-size: 18px;
+  }
 }
