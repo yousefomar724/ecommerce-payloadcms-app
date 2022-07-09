@@ -60,7 +60,6 @@ const Page: React.FC<Props> = (props) => {
             <a className="snipcart-checkout text-2xl cursor-pointer">
               <span className="snipcart-total-price">$0.00</span>(
               <span className="snipcart-items-count">0</span>)
-              {/* ${cart.subtotal?.toFixed(2)} */}
             </a>
           </ul>
         </nav>
@@ -69,6 +68,7 @@ const Page: React.FC<Props> = (props) => {
         {data.docs.map((product: any) => {
           return (
             <Card
+              key={product.id}
               product={{
                 name: product.name,
                 description: product.description,
